@@ -1,0 +1,13 @@
+{
+  "name": "skynet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "notebook": "docker run -it --rm -v $(pwd):/workspace -p 8888:8888 skynet ./notebook.sh",
+    "docker": "docker run -it --rm -v $(pwd):/workspace skynet"
+  },
+  "keywords": [],
+  "author": "Anand Thakker <vestibule@anandthakker.net> (http://anandthakker.net/)",
+  "license": "ISC"
+}
