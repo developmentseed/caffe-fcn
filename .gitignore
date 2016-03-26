@@ -3,3 +3,4 @@ data/
 *.caffemodel
 
 node_modules
+.ipynb_checkpoints

@@ -2,6 +2,15 @@
 fcn-8s/trained-weights.caffemodel:
 	curl http://dl.caffe.berkeleyvision.org/fcn-8s-pascalcontext.caffemodel > $@
 
+data/pascal-voc2010-trainval.tar:
+	curl http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar > $@
+
+data/pascal-voc2010: data/pascal-voc2010-trainval.tar
+	tar -C data/ -xvf $^
+	mv data/VOCdevkit/VOC2010 $@
+	rmdir data/VOCdevkit
+	rm $^
+
 .PHONY: build-docker
 build-docker:
 	docker build -t caffe-fcn docker
