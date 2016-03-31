@@ -1,11 +1,11 @@
 {
-  "name": "skynet",
+  "name": "caffe-fcn",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "notebook": "docker run -it --rm -v $(pwd):/workspace -p 8888:8888 skynet ./notebook.sh",
-    "docker": "docker run -it --rm -v $(pwd):/workspace skynet"
+    "notebook": "docker run -it --rm -v $(pwd):/workspace -p 8888:8888 caffe-fcn ./notebook.sh",
+    "docker": "docker run -it --rm -v $(pwd):/workspace caffe-fcn"
   },
   "keywords": [],
   "author": "Anand Thakker <vestibule@anandthakker.net> (http://anandthakker.net/)",
