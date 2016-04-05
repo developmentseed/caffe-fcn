@@ -12,7 +12,7 @@ Clone this repo, then:
 
 ```
 # download weights from model zoo
-make fcn-8s/trained-weights.caffemodel
+CAFFE_ROOT=/path/to/caffe/repo make fcn-8s/fcn-8s-pascalcontext.caffemodel
 # build docker container
 make build-docker
 ```

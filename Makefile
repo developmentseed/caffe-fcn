@@ -1,6 +1,5 @@
-
-fcn-8s/trained-weights.caffemodel:
-	curl http://dl.caffe.berkeleyvision.org/fcn-8s-pascalcontext.caffemodel > $@
+fcn-8s/fcn-8s-pascalcontext.caffemodel:
+	${CAFFE_ROOT}/scripts/download_model_binary.py fcn-8s
 
 .INTERMEDIATE: data/pascal-voc2010-trainval.tar
 data/pascal-voc2010-trainval.tar:
